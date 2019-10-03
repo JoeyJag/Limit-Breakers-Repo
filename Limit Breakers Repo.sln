@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Limit Breakers Repo", "Limit Breakers Repo\Limit Breakers Repo.csproj", "{7CB2381E-0D54-4A69-A7FD-97EC5E9CA2C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Limit Breakers Repo.Tests", "Limit Breakers Repo.Tests\Limit Breakers Repo.Tests.csproj", "{EC822239-F9B0-4794-B8FA-E55455825AD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CB2381E-0D54-4A69-A7FD-97EC5E9CA2C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB2381E-0D54-4A69-A7FD-97EC5E9CA2C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB2381E-0D54-4A69-A7FD-97EC5E9CA2C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB2381E-0D54-4A69-A7FD-97EC5E9CA2C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC822239-F9B0-4794-B8FA-E55455825AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC822239-F9B0-4794-B8FA-E55455825AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC822239-F9B0-4794-B8FA-E55455825AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC822239-F9B0-4794-B8FA-E55455825AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
