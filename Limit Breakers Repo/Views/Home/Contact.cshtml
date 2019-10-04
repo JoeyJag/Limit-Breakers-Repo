@@ -1,17 +1,30 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Newsboard";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<hgroup class="title">
+    <h1>Newsboard.</h1>
+    <h2>Check what's new on our store.</h2>
+</hgroup>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+
+<section class="contact">
+    <header>
+        <h2>Coming Soon:</h2>
+    </header> <br />
+
+    <p>Upload File: </p>
+    <div class="col-md-10">
+        <input type="file" name="ImageFile" required />
+    </div> <br /> <br /> <br />
+
+    <p><b>Cuphead</b> (Coming Early November)<p /> <br />
+    <p> <a href="~/Additional/Cuphead.cshtml"> <img src="~/Scripts/Images/Cuphead.jpg" class="center" ; width="250" height="210" /> </a> </p> <br />
+
+    <p><b>Limbo</b> (Coming Late November)</p> <br />
+    <p> <a href="~/Additional/Limbo.cshtml"> <img src="~/Scripts/Images/Limbo.png" class="center" ; width="175" height="210" /> </a> </p> <br />
+
+    <p><b>Little Nightmares</b> (Coming Early December)</p> <br />
+    <p> <a href="~/Additional/Little Nightmares.cshtml"> <img src="~/Scripts/Images/Little Nightmares.jpg" class="center" ; width="175" height="280" /> </a> </p> <br />
+
+</section>
