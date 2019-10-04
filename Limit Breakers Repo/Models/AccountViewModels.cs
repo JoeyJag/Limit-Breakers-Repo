@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace Limit_Breakers_Repo.Models
@@ -69,6 +70,15 @@ namespace Limit_Breakers_Repo.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
 
+        [Required(ErrorMessage ="Please Enter a Username")]
+        [Display(Name = "Username")]
+        public string Username { get; set; }
+
+        public int Tokens { get; set; }
+
+        [Display(Name = "Phone Number")]
+        public string Phone { get; set; }
+
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
@@ -76,9 +86,13 @@ namespace Limit_Breakers_Repo.Models
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
+        [Display(Name = "Confirm Password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [DisplayName("Type of User")]
+        [Required(ErrorMessage = "Please choose a Type of User")]
+        public string UserType { get; set; }
     }
 
     public class ResetPasswordViewModel
@@ -88,6 +102,10 @@ namespace Limit_Breakers_Repo.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
 
+        [Required(ErrorMessage ="Please Enter a Username")]
+        [Display(Name = "Username")]
+        public string Username { get; set; }
+
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
@@ -95,7 +113,7 @@ namespace Limit_Breakers_Repo.Models
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
+        [Display(Name = "Confirm Password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 

@@ -1,0 +1,83 @@
+﻿@model Limit_Breakers_Repo.Models.Games
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Games</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Review.Comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Review.Comment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReviewInput)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReviewInput)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GameName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GameName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GameID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
