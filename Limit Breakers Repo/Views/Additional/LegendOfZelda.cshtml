@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Legend Of Zelda";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>The Legend of Zelda</h1><br /><br />
+
+<style>
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 15px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+<div class="row">
+    <div class="column">
+        <img src="~/Scripts/Images/zelda1.jpg" alt="cuphead1" style="width:110%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/zelda2.jpg" alt="cuphead2" style="width:110%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/zelda3.png" alt="cuphead3" style="width:110%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/zelda4.jpg" alt="cuphead4" style="width:100%">
+    </div>
+</div>
+<h3>Description of Game:</h3><br />
+<p>
+    The Legend of Zelda: A Link to the Past focuses on
+    Link as he travels on a journey to save Hyrule, defeat
+    Ganon, and rescue maidens related to the Sages.
+</p>
+

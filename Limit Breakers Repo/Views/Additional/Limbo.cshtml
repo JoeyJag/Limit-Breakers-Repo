@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Limbo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Limbo</h1><br /><br />
+<style>
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 15px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+<div class="row">
+    <div class="column">
+        <img src="~/Scripts/Images/limbo1.jpg" alt="limbo1" style="width:110%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/limbo2.jpg" alt="limbo2" style="width:110%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/limbo3.jpg" alt="limbo3" style="width:110%">
+    </div>
+</div>
+<h3>Description of Game:</h3><br />
+<p>
+    Limbo is a 2D side-scroller, incorporating a physics system that governs
+    environmental objects and the player character. The player guides an
+    unnamed boy through dangerous environments and traps as he searches for his sister.
+</p>
+

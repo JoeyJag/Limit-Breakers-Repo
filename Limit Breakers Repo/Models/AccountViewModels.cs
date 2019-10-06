@@ -89,10 +89,7 @@ namespace Limit_Breakers_Repo.Models
         [Display(Name = "Confirm Password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
-
-        [DisplayName("Type of User")]
-        [Required(ErrorMessage = "Please choose a Type of User")]
-        public string UserType { get; set; }
+        
     }
 
     public class ResetPasswordViewModel

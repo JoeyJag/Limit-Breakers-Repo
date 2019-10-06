@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Megaman X";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Megaman X</h1><br /><br />
+
+<style>
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 15px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+
+<div class="row">
+    <div class="column">
+        <img src="~/Scripts/Images/Megaman1.jpg" alt="Megaman1" style="width:110%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/Megaman2.jpg" alt="Megaman2" style="width:110%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/Megaman3.jpg" alt="Megaman3" style="width:110%">
+    </div>
+</div>
+<h3>Description of Game:</h3><br />
+<p>
+    Mega Man X, commonly known as "X", was created by Dr. Thomas Light an
+    unknown number of years after the Mega Man series. X was a new type
+    of robot with the ability to make his own decisions. Recognizing the
+    potential danger of this model, Light sealed X away in a diagnostic
+    capsule for over 30 years of testing.
+</p>
+

@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Little Nightmares";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Little Nightmares</h1><br /><br />
+<style>
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 15px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+
+<div class="row">
+    <div class="column">
+        <img src="~/Scripts/Images/LM1.jpg" alt="LM1" style="width:110%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/LM2.jpg" alt="LM2" style="width:110%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/LM3.jpg" alt="LM3" style="width:110%">
+    </div>
+</div>
+<h3>Description of Game:</h3><br />
+<p>
+    Little Nightmares is a darkly whimsical tale about a girl called Six
+    who must escape captivity from a vast, mysterious vessel called The Maw.
+    The way we like to describe it is the place where childhood fears come to life.
+</p>
+

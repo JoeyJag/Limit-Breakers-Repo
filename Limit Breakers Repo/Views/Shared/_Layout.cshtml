@@ -26,6 +26,27 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Games", "About", "Home")</li>
                     <li>@Html.ActionLink("Newsboard", "Contact", "Home")</li>
+                    
+
+                    <li>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>@Html.ActionLink("Admin Menu", "Index", "Games")</li>
+
+                            </ul>
+                        }
+                    </li>
+                    <li>
+                        @if (User.IsInRole("Developer"))
+                        {
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>@Html.ActionLink("Upload Game", "Create", "Games")</li>
+
+                            </ul>
+                        }
+                    </li>
+
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

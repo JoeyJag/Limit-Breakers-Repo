@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Cuphead";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+
+<h1>Cuphead</h1><br /><br />
+<div class="row">
+    <div class="column">
+        <img src="~/Scripts/Images/cuphead1.jpg" alt="cuphead1" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/cuphead2.jpg" alt="cuphead2" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/cuphead3.jpg" alt="cuphead3" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/cuphead4.png" alt="cuphead4" style="width:100%">
+    </div>
+</div>
+
+<h3>Description of Game:</h3><br />
+<p>
+    Cuphead is a classic run and gun action game heavily focused on boss battles.
+    Inspired by cartoons of the 1930s, the visuals and audio are painstakingly created with
+    the same techniques of the era, i.e. traditional hand drawn cel animation, watercolor
+    backgrounds, and original jazz recordings.
+</p>
+

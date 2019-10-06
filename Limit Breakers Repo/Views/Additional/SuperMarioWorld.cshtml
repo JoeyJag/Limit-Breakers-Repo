@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Super Mario World";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Super Mario World</h1><br /><br />
+<style>
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 15px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+
+<div class="row">
+    <div class="column">
+        <img src="~/Scripts/Images/MW1.jpg" alt="MW1" style="width:110%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/MW2.jpg" alt="MW2" style="width:110%">
+    </div>
+    <div class="column">
+        <img src="~/Scripts/Images/MW3.jpg" alt="MW3" style="width:110%">
+    </div>
+</div>
+<h3>Description of Game:</h3><br />
+<p>
+    The story follows Mario's quest to save Princess Toadstool and the Dinosaur
+    Land from the series antagonist Bowser and his minions, the Koopalings.
+</p>
+
