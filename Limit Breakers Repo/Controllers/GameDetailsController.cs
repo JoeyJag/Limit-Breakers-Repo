@@ -129,6 +129,7 @@ namespace Limit_Breakers_Repo.Controllers
             return View(db.GameDetails.ToList());
         }
 
+
         // POST: GameDetails/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

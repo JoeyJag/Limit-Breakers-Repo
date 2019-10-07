@@ -1,0 +1,103 @@
+  // Display table
+ 
+public ActionRestul Index()            
+{
+ var VariableName = db.TableName(ClassName).ToList();
+ return View(VariableName);
+}
+
+  // LinQ( orderby , where ) in CONTROLLER
+
+public ActionResult Index2()    
+{                    
+ var VN = from x in db.TBN 
+          orderby x.ColumnName(eg. Price) ascending
+          where x.ColumnName2 > 0 && x.age < 5
+          select x;
+ return View(VN);
+}
+
+
+// Class 
+
+public class Post
+{
+[Key]
+[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+public int PostID { get; set; }
+"        "      "        "     
+"        "      "        "
+
+public int BlogID { get; set; }  // Foreign Key
+public virtual Blog(other table class Name) Blog(var) { get; set; }  // Relationship// Post has 1 blog
+
+public class Blog
+{
+[Key]
+[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+public BlogID { get; set; }
+"   "     "       "      "
+
+public virtual List<Posts(other table class Name)> Posts(var) { get; set; }  //Relationship   // Blog has many posts
+
+// Context Class
+
+using System.Data.Entity;
+
+public class ClassNameContext(eg. HotelContext) : DbContext
+{
+ public ClassNameContext() : base("ClassNameContext")
+  {
+   
+  } 
+ public DbSet<ClassName> ClassName { get; set; }          // Add for all other classes
+ public DbSet<ClassName2> ClassName2 { get; set; }
+ public DbSet<ClassName3> ClassName3 { get; set; }
+}
+
+
+// Data Annotations 
+
+[Required]
+[Required(ErrorMessage = "_______")]
+[DisplayName ("Name")]
+
+[Key]
+[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
+// Normal Controller 
+
+[HttpPost]
+        public ActionResult Create(ClassName obj)
+        {
+            obj.name = obj.name;
+            obj.location = obj.location;
+            obj.numItems = obj.numItems;
+            obj.basicCashReward = obj.calcBasicReward();
+            obj.additionalCashReward = obj.calcAdditional();
+           
+            return View(obj);
+        }
+
+// Code First Controller
+ 
+if (ModelState.IsValid)
+{
+ VN(normally use lower case of ClassName).YearOfBirth = VN.getYear();
+ VN.Age = VN.calcAge();
+
+ db.ClassName.Add(VN);
+ db.SaveHChanges();
+ return RedirestToAction("Index");
+}   
+ return View(VN);
+
+
+
+
+
+
+
+
+
+
