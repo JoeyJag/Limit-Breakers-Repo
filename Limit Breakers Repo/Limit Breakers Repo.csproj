@@ -179,6 +179,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\GameDetailsController.cs" />
     <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -194,9 +195,18 @@
     <Compile Include="Migrations\201910042059027_InitialModel.Designer.cs">
       <DependentUpon>201910042059027_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910071222429_InitialModel1.cs" />
+    <Compile Include="Migrations\201910071222429_InitialModel1.Designer.cs">
+      <DependentUpon>201910071222429_InitialModel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910071233289_InitialModel2.cs" />
+    <Compile Include="Migrations\201910071233289_InitialModel2.Designer.cs">
+      <DependentUpon>201910071233289_InitialModel2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\GameDetails.cs" />
     <Compile Include="Models\Games.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -280,6 +290,12 @@
     <Content Include="Views\Additional\LittleNightmares.cshtml" />
     <Content Include="Views\Additional\MegamanX.cshtml" />
     <Content Include="Views\Additional\SuperMarioWorld.cshtml" />
+    <Content Include="Views\GameDetails\Create.cshtml" />
+    <Content Include="Views\GameDetails\Delete.cshtml" />
+    <Content Include="Views\GameDetails\Details.cshtml" />
+    <Content Include="Views\GameDetails\Edit.cshtml" />
+    <Content Include="Views\GameDetails\Index.cshtml" />
+    <Content Include="Views\GameDetails\GamesPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -299,6 +315,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910042059027_InitialModel.resx">
       <DependentUpon>201910042059027_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910071222429_InitialModel1.resx">
+      <DependentUpon>201910071222429_InitialModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910071233289_InitialModel2.resx">
+      <DependentUpon>201910071233289_InitialModel2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
