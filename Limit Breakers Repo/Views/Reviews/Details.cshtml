@@ -2,7 +2,6 @@
 
 @{
     ViewBag.Title = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Details</h2>
@@ -12,6 +11,22 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
+            @Html.DisplayNameFor(model => model.GameDetails.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GameDetails.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReviewOfGame)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReviewOfGame)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.Rating)
         </dt>
 
@@ -19,25 +34,9 @@
             @Html.DisplayFor(model => model.Rating)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Comment)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Comment)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ReviewDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ReviewDate)
-        </dd>
-
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewId }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

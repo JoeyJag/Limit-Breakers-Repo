@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
+
 namespace Limit_Breakers_Repo.Models
 {
     public class ExternalLoginConfirmationViewModel
@@ -90,6 +91,7 @@ namespace Limit_Breakers_Repo.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
         
+ 
     }
 
     public class ResetPasswordViewModel

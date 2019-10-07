@@ -29,10 +29,9 @@ namespace Limit_Breakers_Repo.Models
         {
             return new ApplicationDbContext();
         }
-
-        public DbSet<Games> Games { get; set; }
-        public DbSet<Category> Category { get; set; }
-        public DbSet<Review> Review { get; set; }
         public DbSet<GameDetails> GameDetails { get; set; }
+        public DbSet<Review> Review { get; set; }
+
+        public DbSet<News> News { get; set; }
     }
 }

@@ -18,7 +18,9 @@ namespace Limit_Breakers_Repo.Models
         public string ImageLocation { get; set; }
         public string GameLocation { get; set; }
 
+        public virtual IList<Review> Review { get; set; }
 
+        public virtual IList<News> News { get; set; }
 
     }
 }
