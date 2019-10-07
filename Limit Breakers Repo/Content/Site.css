@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-image: url("../Scripts/Images/Adobe (Cropped).jpg");
+    background-image: url("../Scripts/Images/backgroundpattern.jpg");
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -24,7 +24,7 @@ textarea {
     max-width: 280px;
 }
 table{
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 img{
@@ -36,7 +36,7 @@ img{
 
 img{
     
- border-radius: 15px;
+ border-radius: 10px;
 }
 
 * {box-sizing:border-box}
@@ -133,3 +133,31 @@ img{
   from {opacity: .4}
   to {opacity: 1}
 }
+
+th{
+    text-align:center;
+}
+
+header{
+    text-align:center;
+}
+
+.navbar{
+    background-color:black !important;
+}
+
+textarea {
+    width: 600px;
+    height: 200px;
+}
+
+input[type=text] {
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+input[type=password] {
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
