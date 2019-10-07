@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -11,15 +10,15 @@ namespace Limit_Breakers_Repo.Models
     public class Review
     {
         [Key]
-        public int ReviewId { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ReviewID { get; set; }
 
-        [Display(Name = "Rating")]
+        public string ReviewOfGame{ get; set; }
+
         public int Rating { get; set; }
 
-        [Display(Name = "Comment")]
-        public string Comment { get; set; }
+        public int GameID { get; set; }
+        public virtual GameDetails GameDetails { get; set; }
 
-        public DateTime ReviewDate { get; set; }
-        public ICollection<Games> Games { get; set; }
     }
 }
