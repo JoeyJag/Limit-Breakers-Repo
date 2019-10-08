@@ -12,13 +12,14 @@ namespace Limit_Breakers_Repo.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ReviewID { get; set; }
-
+        [Required]
         public string ReviewOfGame{ get; set; }
-
+        [Required]
+        [Range(1,5)]
         public int Rating { get; set; }
 
         public int GameID { get; set; }
         public virtual GameDetails GameDetails { get; set; }
-
+       
     }
 }

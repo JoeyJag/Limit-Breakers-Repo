@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Limit_Breakers_Repo.Models.ReviewGameViewModel>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReviewOfGame)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rating)
+    ></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReviewOfGame)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rating)
+        </td>
+  
+    </tr>
+}
+
+</table>

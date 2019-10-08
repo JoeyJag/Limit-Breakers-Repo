@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Limit_Breakers_Repo.Models.Cart>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Wishlist</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CartID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.genre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CartID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.genre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CartID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CartID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CartID })
+        </td>
+    </tr>
+}
+
+</table>
+
+<div>
+    <input type="button" value="View More Games" class="btn btn-default" onclick="@("window.location.href='" + @Url.Action("About", "Home") + "'");" />
+</div>
+<div>
+    <input type="button" value="Done" class="btn btn-default" onclick="@("window.location.href='" + @Url.Action("Index", "Home") + "'");" />
+</div>

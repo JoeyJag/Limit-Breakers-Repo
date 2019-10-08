@@ -4,32 +4,45 @@
     ViewBag.Title = "GamesPage";
 }
 
-@foreach (var item in Model)
-{
+<h2>Games</h2> <br />
+<h3>Feel free to download whichever game is appealing to you.</h3>
 
-    <table>
-        <tr>
-            <td><b>Name:</b></td>
-            <td>@item.Name</td>
-        </tr>
-        <tr>
-            <td><b>Genre:</b></td>
-            <td>@item.Genre</td>
-        </tr>
-        <tr>
-            <td><b>Description:</b></td>
-            <td>@item.Description</td>
-        </tr>
-    </table>
-    <table style="font-family:Arial; border:1px solid black; width: 800px">
-        <tr>
-            <td>
-                <img src="@Url.Content("~/Content/"+item.ImageLocation)" />
-            </td>
-        </tr>
-    </table>
-    <table>
-        <a href="~/Content/@item.GameLocation">@Html.DisplayFor(modelItem=> item.GameLocation)</a>
+<div class="dropdown">
+    @foreach (var item in Model)
+    {
+        <p>
+            <table align="center">
+                <tr>
+                    <th><h4>@item.Name</h4></th>
 
-    </table>
-}
+                </tr>
+                <tr>
+                    <td>
+                        <b>Genre:</b> @item.Genre
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Description:</b>@item.Description</td>
+
+                </tr>
+
+
+                <tr>
+                    <th>
+
+                        <img src="@Url.Content("~/Content/"+item.ImageLocation)" height="100" width="120" />
+                    </th>
+                </tr>
+
+
+                <tr>
+                    <th>
+                        <b>Download:</b>
+                        <a href="~/Content/@item.GameLocation">@Html.DisplayFor(modelItem => item.GameLocation)</a>
+                    </th>
+                </tr>
+            </table>
+        </p>
+    }
+

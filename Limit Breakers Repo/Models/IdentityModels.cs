@@ -33,5 +33,7 @@ namespace Limit_Breakers_Repo.Models
         public DbSet<Review> Review { get; set; }
 
         public DbSet<News> News { get; set; }
+
+        public System.Data.Entity.DbSet<Limit_Breakers_Repo.Models.ReviewGameViewModel> ReviewGameViewModels { get; set; }
     }
 }
