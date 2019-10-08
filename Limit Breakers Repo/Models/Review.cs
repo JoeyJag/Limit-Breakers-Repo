@@ -20,6 +20,6 @@ namespace Limit_Breakers_Repo.Models
         public string Comment { get; set; }
 
         public DateTime ReviewDate { get; set; }
-        public ICollection<Games> Games { get; set; }
+        public virtual ICollection<Games> Games { get; set; }
     }
 }

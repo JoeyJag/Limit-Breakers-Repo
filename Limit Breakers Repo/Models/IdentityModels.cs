@@ -33,6 +33,6 @@ namespace Limit_Breakers_Repo.Models
         public DbSet<Games> Games { get; set; }
         public DbSet<Category> Category { get; set; }
         public DbSet<Review> Review { get; set; }
-
+        public DbSet<Cart> Cart { get; set; }
     }
 }

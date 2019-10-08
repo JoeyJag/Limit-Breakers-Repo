@@ -38,5 +38,6 @@ namespace Limit_Breakers_Repo.Models
 
         public virtual Category Category { get; set; }
         public virtual Review Review { get; set; }
+
     }
 }

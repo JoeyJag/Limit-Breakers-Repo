@@ -16,6 +16,6 @@ namespace Limit_Breakers_Repo.Models
         [Display(Name = "Category Name")]
         public string CategoryName { get; set; }
 
-        public ICollection<Games> Games { get; set; }
+        public virtual ICollection<Games> Games { get; set; }
     }
 }
