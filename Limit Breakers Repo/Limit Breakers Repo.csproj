@@ -178,11 +178,11 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CartsController.cs" />
-    <Compile Include="Controllers\CategoriesController.cs" />
-    <Compile Include="Controllers\GamesController.cs" />
+    <Compile Include="Controllers\GameDetailsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\ReviewGameViewModelController.cs" />
     <Compile Include="Controllers\ReviewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -195,26 +195,66 @@
     <Compile Include="Migrations\201910042059027_InitialModel.Designer.cs">
       <DependentUpon>201910042059027_InitialModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910071817331_InitialModel1.cs" />
-    <Compile Include="Migrations\201910071817331_InitialModel1.Designer.cs">
-      <DependentUpon>201910071817331_InitialModel1.cs</DependentUpon>
+    <Compile Include="Migrations\201910071222429_InitialModel1.cs" />
+    <Compile Include="Migrations\201910071222429_InitialModel1.Designer.cs">
+      <DependentUpon>201910071222429_InitialModel1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910071823527_InitialModel2.cs" />
-    <Compile Include="Migrations\201910071823527_InitialModel2.Designer.cs">
-      <DependentUpon>201910071823527_InitialModel2.cs</DependentUpon>
+    <Compile Include="Migrations\201910071233289_InitialModel2.cs" />
+    <Compile Include="Migrations\201910071233289_InitialModel2.Designer.cs">
+      <DependentUpon>201910071233289_InitialModel2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910071902296_InitialModel3.cs" />
-    <Compile Include="Migrations\201910071902296_InitialModel3.Designer.cs">
-      <DependentUpon>201910071902296_InitialModel3.cs</DependentUpon>
+    <Compile Include="Migrations\201910071608209_InitialModel3.cs" />
+    <Compile Include="Migrations\201910071608209_InitialModel3.Designer.cs">
+      <DependentUpon>201910071608209_InitialModel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910071723521_InitialModel4.cs" />
+    <Compile Include="Migrations\201910071723521_InitialModel4.Designer.cs">
+      <DependentUpon>201910071723521_InitialModel4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910071737242_InitialModel5.cs" />
+    <Compile Include="Migrations\201910071737242_InitialModel5.Designer.cs">
+      <DependentUpon>201910071737242_InitialModel5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910071758287_InitialModel6.cs" />
+    <Compile Include="Migrations\201910071758287_InitialModel6.Designer.cs">
+      <DependentUpon>201910071758287_InitialModel6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910071803041_InitialModel7.cs" />
+    <Compile Include="Migrations\201910071803041_InitialModel7.Designer.cs">
+      <DependentUpon>201910071803041_InitialModel7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910072005414_InitialModel8.cs" />
+    <Compile Include="Migrations\201910072005414_InitialModel8.Designer.cs">
+      <DependentUpon>201910072005414_InitialModel8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910072248266_InitialModel9.cs" />
+    <Compile Include="Migrations\201910072248266_InitialModel9.Designer.cs">
+      <DependentUpon>201910072248266_InitialModel9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910072357312_InitialModel10.cs" />
+    <Compile Include="Migrations\201910072357312_InitialModel10.Designer.cs">
+      <DependentUpon>201910072357312_InitialModel10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910080007114_InitialModel11.cs" />
+    <Compile Include="Migrations\201910080007114_InitialModel11.Designer.cs">
+      <DependentUpon>201910080007114_InitialModel11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910080011057_InitialModel12.cs" />
+    <Compile Include="Migrations\201910080011057_InitialModel12.Designer.cs">
+      <DependentUpon>201910080011057_InitialModel12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910080013261_InitialModel13.cs" />
+    <Compile Include="Migrations\201910080013261_InitialModel13.Designer.cs">
+      <DependentUpon>201910080013261_InitialModel13.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Cart.cs" />
-    <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\Games.cs" />
+    <Compile Include="Models\GameDetails.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\News.cs" />
     <Compile Include="Models\Review.cs" />
+    <Compile Include="Models\ReviewGameViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -223,8 +263,12 @@
     <Content Include="App_Data\aspnet-Limit Breakers Repo-20191003101731_log.ldf">
       <DependentUpon>aspnet-Limit Breakers Repo-20191003101731.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\bootstrap-darkly.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Slideshow\riotgames.jpg" />
+    <Content Include="Content\Slideshow\RiotGames2.jpg" />
+    <Content Include="Content\Slideshow\RiotGames3.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -277,32 +321,29 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Games\Create.cshtml" />
-    <Content Include="Views\Games\Delete.cshtml" />
-    <Content Include="Views\Games\Details.cshtml" />
-    <Content Include="Views\Games\Edit.cshtml" />
-    <Content Include="Views\Games\Index.cshtml" />
-    <Content Include="Views\Categories\Create.cshtml" />
-    <Content Include="Views\Categories\Delete.cshtml" />
-    <Content Include="Views\Categories\Details.cshtml" />
-    <Content Include="Views\Categories\Edit.cshtml" />
-    <Content Include="Views\Categories\Index.cshtml" />
-    <Content Include="Views\Reviews\Create.cshtml" />
-    <Content Include="Views\Reviews\Delete.cshtml" />
-    <Content Include="Views\Reviews\Details.cshtml" />
-    <Content Include="Views\Reviews\Edit.cshtml" />
-    <Content Include="Views\Reviews\Index.cshtml" />
     <Content Include="Views\Additional\Cuphead.cshtml" />
     <Content Include="Views\Additional\LegendOfZelda.cshtml" />
     <Content Include="Views\Additional\Limbo.cshtml" />
     <Content Include="Views\Additional\LittleNightmares.cshtml" />
     <Content Include="Views\Additional\MegamanX.cshtml" />
     <Content Include="Views\Additional\SuperMarioWorld.cshtml" />
-    <Content Include="Views\Carts\Create.cshtml" />
-    <Content Include="Views\Carts\Delete.cshtml" />
-    <Content Include="Views\Carts\Details.cshtml" />
-    <Content Include="Views\Carts\Edit.cshtml" />
-    <Content Include="Views\Carts\Index.cshtml" />
+    <Content Include="Views\GameDetails\Create.cshtml" />
+    <Content Include="Views\GameDetails\Delete.cshtml" />
+    <Content Include="Views\GameDetails\Details.cshtml" />
+    <Content Include="Views\GameDetails\Edit.cshtml" />
+    <Content Include="Views\GameDetails\Index.cshtml" />
+    <Content Include="Views\GameDetails\GamesPage.cshtml" />
+    <Content Include="Views\Reviews\Create.cshtml" />
+    <Content Include="Views\Reviews\Delete.cshtml" />
+    <Content Include="Views\Reviews\Details.cshtml" />
+    <Content Include="Views\Reviews\Edit.cshtml" />
+    <Content Include="Views\Reviews\Index.cshtml" />
+    <Content Include="Views\News\Create.cshtml" />
+    <Content Include="Views\News\Delete.cshtml" />
+    <Content Include="Views\News\Details.cshtml" />
+    <Content Include="Views\News\Edit.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\ReviewGameViewModel\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\Images\" />
@@ -322,14 +363,44 @@
     <EmbeddedResource Include="Migrations\201910042059027_InitialModel.resx">
       <DependentUpon>201910042059027_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910071817331_InitialModel1.resx">
-      <DependentUpon>201910071817331_InitialModel1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910071222429_InitialModel1.resx">
+      <DependentUpon>201910071222429_InitialModel1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910071823527_InitialModel2.resx">
-      <DependentUpon>201910071823527_InitialModel2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910071233289_InitialModel2.resx">
+      <DependentUpon>201910071233289_InitialModel2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910071902296_InitialModel3.resx">
-      <DependentUpon>201910071902296_InitialModel3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910071608209_InitialModel3.resx">
+      <DependentUpon>201910071608209_InitialModel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910071723521_InitialModel4.resx">
+      <DependentUpon>201910071723521_InitialModel4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910071737242_InitialModel5.resx">
+      <DependentUpon>201910071737242_InitialModel5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910071758287_InitialModel6.resx">
+      <DependentUpon>201910071758287_InitialModel6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910071803041_InitialModel7.resx">
+      <DependentUpon>201910071803041_InitialModel7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910072005414_InitialModel8.resx">
+      <DependentUpon>201910072005414_InitialModel8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910072248266_InitialModel9.resx">
+      <DependentUpon>201910072248266_InitialModel9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910072357312_InitialModel10.resx">
+      <DependentUpon>201910072357312_InitialModel10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910080007114_InitialModel11.resx">
+      <DependentUpon>201910080007114_InitialModel11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910080011057_InitialModel12.resx">
+      <DependentUpon>201910080011057_InitialModel12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910080013261_InitialModel13.resx">
+      <DependentUpon>201910080013261_InitialModel13.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

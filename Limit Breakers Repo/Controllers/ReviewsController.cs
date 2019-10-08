@@ -17,7 +17,8 @@ namespace Limit_Breakers_Repo.Controllers
         // GET: Reviews
         public ActionResult Index()
         {
-            return View(db.Review.ToList());
+            var review = db.Review.Include(r => r.GameDetails);
+            return View(review.ToList());
         }
 
         // GET: Reviews/Details/5
@@ -38,6 +39,7 @@ namespace Limit_Breakers_Repo.Controllers
         // GET: Reviews/Create
         public ActionResult Create()
         {
+            ViewBag.GameID = new SelectList(db.GameDetails, "GameID", "Name");
             return View();
         }
 
@@ -46,7 +48,7 @@ namespace Limit_Breakers_Repo.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ReviewId,Rating,Comment,ReviewDate")] Review review)
+        public ActionResult Create([Bind(Include = "ReviewID,ReviewOfGame,Rating,GameID")] Review review)
         {
             if (ModelState.IsValid)
             {
@@ -55,6 +57,7 @@ namespace Limit_Breakers_Repo.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.GameID = new SelectList(db.GameDetails, "GameID", "Name", review.GameID);
             return View(review);
         }
 
@@ -70,6 +73,7 @@ namespace Limit_Breakers_Repo.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.GameID = new SelectList(db.GameDetails, "GameID", "Name", review.GameID);
             return View(review);
         }
 
@@ -78,7 +82,7 @@ namespace Limit_Breakers_Repo.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ReviewId,Rating,Comment,ReviewDate")] Review review)
+        public ActionResult Edit([Bind(Include = "ReviewID,ReviewOfGame,Rating,GameID")] Review review)
         {
             if (ModelState.IsValid)
             {
@@ -86,6 +90,7 @@ namespace Limit_Breakers_Repo.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.GameID = new SelectList(db.GameDetails, "GameID", "Name", review.GameID);
             return View(review);
         }
 

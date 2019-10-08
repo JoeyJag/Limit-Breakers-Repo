@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Limit_Breakers_Repo.Models.GameDetails>
+
+@{
+    ViewBag.Title = "GamesPage";
+}
+<div class="dropdown">
+    @foreach (var item in Model)
+    {
+        <p>
+            <table align="center">
+                <tr>
+                    <th><h4>@item.Name</h4></th>
+
+                </tr>
+                <tr>
+                    <td>
+                        <b>Genre:</b> @item.Genre
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Description:</b>@item.Description</td>
+
+                </tr>
+
+
+                <tr>
+                    <th>
+
+                        <img src="@Url.Content("~/Content/"+item.ImageLocation)" height="100" width="120" />
+                    </th>
+                </tr>
+
+
+                <tr>
+                    <th>
+                        <b>Download:</b>
+                        <a href="~/Content/@item.GameLocation">@Html.DisplayFor(modelItem => item.GameLocation)</a>
+                    </th>
+                </tr>
+            </table>
+        </p>
+    }
+
