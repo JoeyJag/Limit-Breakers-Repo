@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "AdminView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Admin View</h2>
+<div>
+<input type="button" value="Games" class="btn btn-default" onclick="@("window.location.href='" + @Url.Action("Index", "GameDetails") + "'");" />
+    </div>
+<div>
+    <input type="button" value="Newsboard" class="btn btn-default" onclick="@("window.location.href='" + @Url.Action("Index", "News") + "'");" />
+    </div>
+<div>
+    <input type="button" value="Reviews" class="btn btn-default" onclick="@("window.location.href='" + @Url.Action("Index", "Reviews") + "'");" />
+    </div>

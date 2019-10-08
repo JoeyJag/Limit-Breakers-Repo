@@ -149,5 +149,10 @@ namespace Limit_Breakers_Repo.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult AdminView()
+        {
+            return View();
+        }
     }
 }

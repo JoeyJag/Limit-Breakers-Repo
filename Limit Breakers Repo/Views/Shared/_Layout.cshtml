@@ -19,24 +19,24 @@
                 </button>
 
 
-                <p><img src="~/Scripts/Images/Riot (Dark).jpg" class="center" ; width="400" height="58"  /></p>
+                <p><img src="~/Content/Slideshow/Riot (Dark).jpg" class="center" ; width="400" height="58"  /></p>
             
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Games", "About", "Home")</li>
-                    <li>@Html.ActionLink("Newsboard", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Games", "GamesPage", "GameDetails")</li>
+                    <li>@Html.ActionLink("Newsboard", "Index", "News")</li>
+                    <li>@Html.ActionLink("Write a Review", "Create", "Reviews")</li>
                     
-
-                    
+                                      
 
                     <li>
                         @if (User.IsInRole("Admin"))
                         {
                             <ul class="nav navbar-nav navbar-right">
-                                <li>@Html.ActionLink("Admin Menu", "Index", "Games")</li>
-                                <li>@Html.ActionLink("Wishlist", "Index", "Carts")</li>
+                                <li>@Html.ActionLink("Admin Menu", "AdminView", "GameDetails")</li>
+                                
                             </ul>
                         }
                     </li>
@@ -44,20 +44,12 @@
                         @if (User.IsInRole("Developer"))
                         {
                             <ul class="nav navbar-nav navbar-right">
-                                <li>@Html.ActionLink("Upload Game", "Create", "Games")</li>
-
+                                <li>@Html.ActionLink("Upload Game", "Create", "GameDetails")</li>
+                                <li>@Html.ActionLink("Newsboard", "Create", "News")</li>
                             </ul>
                         }
                     </li>
-                    <li>
-                        @if (User.IsInRole("Customer"))
-                        {
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>@Html.ActionLink("Wishlist", "Index", "Carts")</li>
-
-                            </ul>
-                        }
-                    </li>
+                    
 
                 </ul>
                 @Html.Partial("_LoginPartial")
