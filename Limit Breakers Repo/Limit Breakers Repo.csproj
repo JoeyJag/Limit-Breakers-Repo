@@ -195,57 +195,17 @@
     <Compile Include="Migrations\201910042059027_InitialModel.Designer.cs">
       <DependentUpon>201910042059027_InitialModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910071222429_InitialModel1.cs" />
-    <Compile Include="Migrations\201910071222429_InitialModel1.Designer.cs">
-      <DependentUpon>201910071222429_InitialModel1.cs</DependentUpon>
+    <Compile Include="Migrations\201910080052474_InitialModel1.cs" />
+    <Compile Include="Migrations\201910080052474_InitialModel1.Designer.cs">
+      <DependentUpon>201910080052474_InitialModel1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910071233289_InitialModel2.cs" />
-    <Compile Include="Migrations\201910071233289_InitialModel2.Designer.cs">
-      <DependentUpon>201910071233289_InitialModel2.cs</DependentUpon>
+    <Compile Include="Migrations\201910131952141_InitialModel2.cs" />
+    <Compile Include="Migrations\201910131952141_InitialModel2.Designer.cs">
+      <DependentUpon>201910131952141_InitialModel2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910071608209_InitialModel3.cs" />
-    <Compile Include="Migrations\201910071608209_InitialModel3.Designer.cs">
-      <DependentUpon>201910071608209_InitialModel3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910071723521_InitialModel4.cs" />
-    <Compile Include="Migrations\201910071723521_InitialModel4.Designer.cs">
-      <DependentUpon>201910071723521_InitialModel4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910071737242_InitialModel5.cs" />
-    <Compile Include="Migrations\201910071737242_InitialModel5.Designer.cs">
-      <DependentUpon>201910071737242_InitialModel5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910071758287_InitialModel6.cs" />
-    <Compile Include="Migrations\201910071758287_InitialModel6.Designer.cs">
-      <DependentUpon>201910071758287_InitialModel6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910071803041_InitialModel7.cs" />
-    <Compile Include="Migrations\201910071803041_InitialModel7.Designer.cs">
-      <DependentUpon>201910071803041_InitialModel7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910072005414_InitialModel8.cs" />
-    <Compile Include="Migrations\201910072005414_InitialModel8.Designer.cs">
-      <DependentUpon>201910072005414_InitialModel8.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910072248266_InitialModel9.cs" />
-    <Compile Include="Migrations\201910072248266_InitialModel9.Designer.cs">
-      <DependentUpon>201910072248266_InitialModel9.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910072357312_InitialModel10.cs" />
-    <Compile Include="Migrations\201910072357312_InitialModel10.Designer.cs">
-      <DependentUpon>201910072357312_InitialModel10.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910080007114_InitialModel11.cs" />
-    <Compile Include="Migrations\201910080007114_InitialModel11.Designer.cs">
-      <DependentUpon>201910080007114_InitialModel11.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910080011057_InitialModel12.cs" />
-    <Compile Include="Migrations\201910080011057_InitialModel12.Designer.cs">
-      <DependentUpon>201910080011057_InitialModel12.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910080013261_InitialModel13.cs" />
-    <Compile Include="Migrations\201910080013261_InitialModel13.Designer.cs">
-      <DependentUpon>201910080013261_InitialModel13.cs</DependentUpon>
+    <Compile Include="Migrations\201910132014267_InitialModel3.cs" />
+    <Compile Include="Migrations\201910132014267_InitialModel3.Designer.cs">
+      <DependentUpon>201910132014267_InitialModel3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -263,9 +223,17 @@
     <Content Include="App_Data\aspnet-Limit Breakers Repo-20191003101731_log.ldf">
       <DependentUpon>aspnet-Limit Breakers Repo-20191003101731.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\background\Adobe %28Cropped%29.jpg" />
+    <Content Include="Content\background\backgroundpattern.jpg" />
+    <Content Include="Content\background\trianglesbackground.jpg" />
     <Content Include="Content\bootstrap-darkly.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\background\reindeerbackground.jpg" />
+    <Content Include="Content\background\new-PA-background-web.jpg" />
+    <Content Include="Content\home\coolwallpaper.png" />
+    <Content Include="Content\home\gaming saying.jpg" />
+    <Content Include="Content\home\lolwallpaper.jpg" />
     <Content Include="Content\Slideshow\riotgames.jpg" />
     <Content Include="Content\Slideshow\RiotGames2.jpg" />
     <Content Include="Content\Slideshow\RiotGames3.jpg" />
@@ -346,6 +314,7 @@
     <Content Include="Views\News\Edit.cshtml" />
     <Content Include="Views\News\Index.cshtml" />
     <Content Include="Views\ReviewGameViewModel\Index.cshtml" />
+    <Content Include="Views\GameDetails\AdminView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\Images\" />
@@ -365,44 +334,14 @@
     <EmbeddedResource Include="Migrations\201910042059027_InitialModel.resx">
       <DependentUpon>201910042059027_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910071222429_InitialModel1.resx">
-      <DependentUpon>201910071222429_InitialModel1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910080052474_InitialModel1.resx">
+      <DependentUpon>201910080052474_InitialModel1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910071233289_InitialModel2.resx">
-      <DependentUpon>201910071233289_InitialModel2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910131952141_InitialModel2.resx">
+      <DependentUpon>201910131952141_InitialModel2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910071608209_InitialModel3.resx">
-      <DependentUpon>201910071608209_InitialModel3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910071723521_InitialModel4.resx">
-      <DependentUpon>201910071723521_InitialModel4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910071737242_InitialModel5.resx">
-      <DependentUpon>201910071737242_InitialModel5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910071758287_InitialModel6.resx">
-      <DependentUpon>201910071758287_InitialModel6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910071803041_InitialModel7.resx">
-      <DependentUpon>201910071803041_InitialModel7.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910072005414_InitialModel8.resx">
-      <DependentUpon>201910072005414_InitialModel8.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910072248266_InitialModel9.resx">
-      <DependentUpon>201910072248266_InitialModel9.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910072357312_InitialModel10.resx">
-      <DependentUpon>201910072357312_InitialModel10.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910080007114_InitialModel11.resx">
-      <DependentUpon>201910080007114_InitialModel11.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910080011057_InitialModel12.resx">
-      <DependentUpon>201910080011057_InitialModel12.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910080013261_InitialModel13.resx">
-      <DependentUpon>201910080013261_InitialModel13.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910132014267_InitialModel3.resx">
+      <DependentUpon>201910132014267_InitialModel3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

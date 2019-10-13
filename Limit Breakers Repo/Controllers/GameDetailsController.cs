@@ -123,10 +123,18 @@ namespace Limit_Breakers_Repo.Controllers
             return View(gameDetails);
         }
 
-        public ActionResult GamesPage()
+        public ActionResult GamesPage( string searchBy, string search)
         {
             ApplicationDbContext db = new ApplicationDbContext();
-            return View(db.GameDetails.ToList());
+            if (searchBy == "Genre")
+            {
+                return View(db.GameDetails.Where(x => x.Genre == search || search == null).ToList());
+            }
+            else
+            {
+                return View(db.GameDetails.Where(x => x.Name.StartsWith(search) || search == null).ToList());
+            }
+            
         }
 
 
@@ -148,6 +156,11 @@ namespace Limit_Breakers_Repo.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public ActionResult AdminView()
+        {
+            return View();
         }
     }
 }

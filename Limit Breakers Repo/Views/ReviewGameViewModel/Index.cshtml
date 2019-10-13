@@ -1,5 +1,12 @@
 ﻿@model IEnumerable<Limit_Breakers_Repo.Models.ReviewGameViewModel>
 
+<style>
+    body {
+        background-image: url('../../Content/background/new-PA-background-web.jpg');
+        background-attachment: fixed;
+        background-size:cover
+    }
+</style>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -18,13 +25,13 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.Name)
         </td>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.ReviewOfGame)
         </td>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.Rating)
         </td>
   

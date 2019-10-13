@@ -4,10 +4,19 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<style>
+    body {
+        background-image: url('../../Content/background/backgroundpattern.jpg');
+        background-attachment: fixed;
+    }
+</style>
+
+
+
+<h2>Newsboard</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Update News", "Create")
 </p>
 <table class="table">
     <tr>
@@ -25,16 +34,16 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.GameDetails.Name)
         </td>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.Patch)
         </td>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.Announcement)
         </td>
-        <td>
+        <td align="center">
             @Html.ActionLink("Edit", "Edit", new { id=item.NewsID }) |
             @Html.ActionLink("Details", "Details", new { id=item.NewsID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.NewsID })
