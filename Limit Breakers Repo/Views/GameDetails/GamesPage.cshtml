@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "GamesPage";
 }
+<p>.</p>
 
 <style>
     body {
@@ -13,36 +14,39 @@
 
 </style>
 
-<h2>Games</h2> <br />
+<h2 align="center">Games</h2> 
 <h3>Feel free to download whichever game is appealing to you.</h3>
+
+<p>
+    @using (Html.BeginForm("GamesPage", "GameDetails", FormMethod.Get))
+    {
+        <b> Search By:</b> @Html.RadioButton("searchBy", "Name", true)<text>Name </text>
+        @Html.RadioButton("searchBy", "Genre") <text> Genre </text> <br />
+                        @Html.TextBox("search")<input type="submit" value="Search" />
+    }
+</p>
+
 
 <div class="dropdown">
     @foreach (var item in Model)
     {
         <p>
-                <table>
+                <table width="1000", height="200">
                     <tr>
                         <th><h4>@item.Name</h4></th>
                     </tr>
                     <tr>
                         <td>
-                            <b>Genre:</b> @item.Genre
+                            
 
                         </td>
                     </tr>
                     <tr>
 
-                        <th>
-
-                            <img src="@Url.Content("~/Content/"+item.ImageLocation)" height="100" width="120" />
-                        </th>
+                        <td>
+                            <img src="@Url.Content("~/Content/"+item.ImageLocation)" align="left" /><p></p> Genre: @item.Genre <p>Description: @item.Description</p>
+                        </td>
                     </tr>
-
-
-                    <tr>
-                        <td><b>Description:</b>@item.Description</td>
-                    </tr>
-
 
                     <tr>
                         <th>

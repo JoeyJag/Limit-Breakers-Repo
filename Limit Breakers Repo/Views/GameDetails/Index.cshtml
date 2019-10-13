@@ -11,19 +11,19 @@
 </p>
 <table class="table" >
     <tr>
-        <th align="center">
+        <th >
             @Html.DisplayNameFor(model => model.Name)
         </th>
-        <th align="center">
+        <th >
             @Html.DisplayNameFor(model => model.Genre)
         </th>
-        <th align="center">
+        <th >
             @Html.DisplayNameFor(model => model.Description)
         </th>
-        <th align="center">
+        <th >
             @Html.DisplayNameFor(model => model.ImageLocation)
         </th>
-        <th align="center">
+        <th>
             @Html.DisplayNameFor(model => model.GameLocation)
         </th>
         <th></th>
@@ -31,22 +31,22 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.Name)
         </td>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.Genre)
         </td>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.Description)
         </td>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.ImageLocation)
         </td>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.GameLocation)
         </td>
-        <td>
+        <td align="center">
             @Html.ActionLink("Edit", "Edit", new { id=item.GameID }) |
             @Html.ActionLink("Details", "Details", new { id=item.GameID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.GameID })

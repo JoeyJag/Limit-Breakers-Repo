@@ -31,16 +31,16 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.GameDetails.Name)
         </td>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.ReviewOfGame)
         </td>
-        <td>
+        <td align="center">
             @Html.DisplayFor(modelItem => item.Rating)
         </td>
-        <td>
+        <td align="center">
             @Html.ActionLink("Edit", "Edit", new { id=item.ReviewID }) |
             @Html.ActionLink("Details", "Details", new { id=item.ReviewID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ReviewID })
