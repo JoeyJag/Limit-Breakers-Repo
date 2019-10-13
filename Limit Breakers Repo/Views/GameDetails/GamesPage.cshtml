@@ -4,6 +4,15 @@
     ViewBag.Title = "GamesPage";
 }
 
+<style>
+    body {
+        background-image: url('../../Content/background/reindeerbackground.jpg');
+        background-attachment: fixed;
+    }
+    
+
+</style>
+
 <h2>Games</h2> <br />
 <h3>Feel free to download whichever game is appealing to you.</h3>
 
@@ -11,38 +20,38 @@
     @foreach (var item in Model)
     {
         <p>
-            <table align="center">
-                <tr>
-                    <th><h4>@item.Name</h4></th>
+                <table align="left">
+                    <tr>
+                        <th><h4>@item.Name</h4></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Genre:</b> @item.Genre
 
-                </tr>
-                <tr>
-                    <td>
-                        <b>Genre:</b> @item.Genre
+                        </td>
+                    </tr>
+                    <tr>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>Description:</b>@item.Description</td>
+                        <th>
 
-                </tr>
-
-
-                <tr>
-                    <th>
-
-                        <img src="@Url.Content("~/Content/"+item.ImageLocation)" height="100" width="120" />
-                    </th>
-                </tr>
+                            <img src="@Url.Content("~/Content/"+item.ImageLocation)" height="100" width="120" />
+                        </th>
+                    </tr>
 
 
-                <tr>
-                    <th>
-                        <b>Download:</b>
-                        <a href="~/Content/@item.GameLocation">@Html.DisplayFor(modelItem => item.GameLocation)</a>
-                    </th>
-                </tr>
-            </table>
+                    <tr>
+                        <td><b>Description:</b>@item.Description</td>
+                    </tr>
+
+
+                    <tr>
+                        <th>
+                            <b>Download:</b>
+                            <a href="~/Content/@item.GameLocation">@Html.DisplayFor(modelItem => item.GameLocation)</a>
+                        </th>
+                    </tr>
+                </table>
         </p>
     }
+</div>
 
