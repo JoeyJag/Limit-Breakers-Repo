@@ -199,6 +199,14 @@
     <Compile Include="Migrations\201910080052474_InitialModel1.Designer.cs">
       <DependentUpon>201910080052474_InitialModel1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910131952141_InitialModel2.cs" />
+    <Compile Include="Migrations\201910131952141_InitialModel2.Designer.cs">
+      <DependentUpon>201910131952141_InitialModel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910132014267_InitialModel3.cs" />
+    <Compile Include="Migrations\201910132014267_InitialModel3.Designer.cs">
+      <DependentUpon>201910132014267_InitialModel3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\GameDetails.cs" />
@@ -326,6 +334,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910080052474_InitialModel1.resx">
       <DependentUpon>201910080052474_InitialModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910131952141_InitialModel2.resx">
+      <DependentUpon>201910131952141_InitialModel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910132014267_InitialModel3.resx">
+      <DependentUpon>201910132014267_InitialModel3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
