@@ -215,14 +215,15 @@
     <Content Include="App_Data\aspnet-Limit Breakers Repo-20191003101731_log.ldf">
       <DependentUpon>aspnet-Limit Breakers Repo-20191003101731.mdf</DependentUpon>
     </Content>
-    <Content Include="Content\background\Adobe %28Cropped%29.jpg" />
-    <Content Include="Content\background\backgroundpattern.jpg" />
-    <Content Include="Content\background\trianglesbackground.jpg" />
+    <Content Include="Content\background\cascadebackground.jpg" />
+    <Content Include="Content\background\Gaming Background.jpg" />
+    <Content Include="Content\background\lightorbwhite.jpg" />
+    <Content Include="Content\background\loginpagebackground.jpg" />
+    <Content Include="Content\background\woodenslats.jpg" />
     <Content Include="Content\bootstrap-darkly.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\background\reindeerbackground.jpg" />
-    <Content Include="Content\background\new-PA-background-web.jpg" />
     <Content Include="Content\home\coolwallpaper.png" />
     <Content Include="Content\home\gaming saying.jpg" />
     <Content Include="Content\home\lolwallpaper.jpg" />

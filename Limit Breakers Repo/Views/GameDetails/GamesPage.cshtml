@@ -7,9 +7,11 @@
 
 <style>
     body {
-        background-image: url('../../Content/background/reindeerbackground.jpg');
-        background-attachment: fixed;
+        background-image: url('../../Content/background/Gaming Background.jpg');
+        background-attachment:fixed;
+        background-size:cover;
     }
+
     
 
 </style>
@@ -31,7 +33,7 @@
     @foreach (var item in Model)
     {
         <p>
-                <table width="1000", height="200">
+                <table width="1500", height="200">
                     <tr>
                         <th><h4>@item.Name</h4></th>
                     </tr>
@@ -50,8 +52,7 @@
 
                     <tr>
                         <th>
-                            <b>Download:</b>
-                            <a href="~/Content/@item.GameLocation">@Html.DisplayFor(modelItem => item.GameLocation)</a>
+                            <a href="~/Content/@item.GameLocation">Download</a>
                         </th>
                     </tr>
                 </table>
