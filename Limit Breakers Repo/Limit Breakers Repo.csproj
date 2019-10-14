@@ -231,6 +231,7 @@
     <Content Include="App_Data\aspnet-Limit Breakers Repo-20191003101731_log.ldf">
       <DependentUpon>aspnet-Limit Breakers Repo-20191003101731.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\background\backgroundpattern.jpg" />
     <Content Include="Content\background\cascadebackground.jpg" />
     <Content Include="Content\background\Gaming Background.jpg" />
     <Content Include="Content\background\lightorbwhite.jpg" />
@@ -243,6 +244,7 @@
     <Content Include="Content\home\coolwallpaper.png" />
     <Content Include="Content\home\gaming saying.jpg" />
     <Content Include="Content\home\lolwallpaper.jpg" />
+    <Content Include="Content\background\Riot %28Dark%29.jpg" />
     <Content Include="Content\Slideshow\riotgames.jpg" />
     <Content Include="Content\Slideshow\RiotGames2.jpg" />
     <Content Include="Content\Slideshow\RiotGames3.jpg" />
