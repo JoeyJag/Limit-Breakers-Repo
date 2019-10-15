@@ -348,6 +348,7 @@
     <Content Include="Views\ReviewGameViewModel\Index.cshtml" />
     <Content Include="Views\GameDetails\AdminView.cshtml" />
     <Content Include="Views\News\DisplayIndex.cshtml" />
+    <Content Include="Views\Home\ContactPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\Images\" />
