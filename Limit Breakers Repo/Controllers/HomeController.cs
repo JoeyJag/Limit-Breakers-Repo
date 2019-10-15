@@ -31,5 +31,11 @@ namespace Limit_Breakers_Repo.Controllers
         {
             return View();
         }
+
+        public ActionResult SnakeGame()
+        {
+            return View();
+        }
+
     }
 }
