@@ -215,6 +215,10 @@
     <Compile Include="Migrations\201910142142066_InitialModel5.Designer.cs">
       <DependentUpon>201910142142066_InitialModel5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910142254094_InitialModel6.cs" />
+    <Compile Include="Migrations\201910142254094_InitialModel6.Designer.cs">
+      <DependentUpon>201910142254094_InitialModel6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\GameDetails.cs" />
@@ -238,8 +242,6 @@
     <Content Include="Content\background\loginpagebackground.jpg" />
     <Content Include="Content\background\woodenslats.jpg" />
     <Content Include="Content\bootstrap-darkly.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\background\reindeerbackground.jpg" />
     <Content Include="Content\home\coolwallpaper.png" />
     <Content Include="Content\home\gaming saying.jpg" />
@@ -254,7 +256,13 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\LimitBreakers - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LimitBreakers - FTP %283%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LimitBreakers - FTP %284%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %283%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %284%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -321,7 +329,6 @@
     <Content Include="Views\Reviews\Index.cshtml" />
     <Content Include="Views\News\Create.cshtml" />
     <Content Include="Views\News\Delete.cshtml" />
-    <Content Include="Views\News\Details.cshtml" />
     <Content Include="Views\News\Edit.cshtml" />
     <Content Include="Views\News\Index.cshtml" />
     <Content Include="Views\ReviewGameViewModel\Index.cshtml" />
@@ -359,6 +366,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910142142066_InitialModel5.resx">
       <DependentUpon>201910142142066_InitialModel5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910142254094_InitialModel6.resx">
+      <DependentUpon>201910142254094_InitialModel6.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
