@@ -131,10 +131,18 @@ namespace Limit_Breakers_Repo.Controllers
 
 
 
-        public ActionResult DisplayIndex()
+        public ActionResult DisplayIndex(string searchBy, string search)
         {
             var news = db.News.Include(n => n.GameDetails);
-            return View(news.ToList());
+            if (searchBy == "Genre")
+            {
+                return View(db.News.Where(x => x.Patch == search || search == null).ToList());
+            }
+            else
+            {
+                return View(db.News.Where(x => x.GameDetails.Name.StartsWith(search) || search == null).ToList());
+            }
+            
         }
 
     }
