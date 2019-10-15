@@ -26,5 +26,10 @@ namespace Limit_Breakers_Repo.Controllers
 
             return View();
         }
+
+        public ActionResult ContactPage()
+        {
+            return View();
+        }
     }
 }
