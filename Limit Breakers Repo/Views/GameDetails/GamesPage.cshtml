@@ -10,10 +10,12 @@
         background-image: url('../../Content/background/Gaming Background.jpg');
         background-attachment:fixed;
         background-size:cover;
+    } 
+
+    img{
+        max-height: 500px;
+        max-height: 200px;
     }
-
-    
-
 </style>
 
 <h2 align="center">Games</h2> 
@@ -33,7 +35,7 @@
     @foreach (var item in Model)
     {
         <p>
-                <table width="1500", height="200">
+                <table width="1200">
                     <tr>
                         <th><h2><b>@item.Name</b></h2></th>
                     </tr>

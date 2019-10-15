@@ -59,7 +59,7 @@ namespace Limit_Breakers_Repo.Controllers
             {
                 if (UploadGame != null)
                 {
-                    string strpath = Server.MapPath("/") + "/Content/" + UploadGame.FileName;
+                    UploadImage.SaveAs(Server.MapPath("/") + "/Content/" + UploadGame.FileName);
                     gameDetails.GameLocation = UploadGame.FileName;
                 }
                 else
@@ -68,7 +68,7 @@ namespace Limit_Breakers_Repo.Controllers
                 }
                 if (UploadImage != null)
                 {
-                    string path1 =(Server.MapPath("/") + "/Content/" + UploadImage.FileName);
+                    UploadImage.SaveAs(Server.MapPath("/") + "/Content/" + UploadImage.FileName);
                     gameDetails.ImageLocation = UploadImage.FileName;
                 }
                 else
