@@ -24,6 +24,17 @@ th,td{
 tr:hover {background-color:#f5f5f5;}
 </style>
 
+<p>.</p>
+
+<p>
+    @using (Html.BeginForm("Index", "GameDetails", FormMethod.Get))
+    {
+        <b> Search By:</b> @Html.RadioButton("searchBy", "Name", true)<text>Name </text>
+        @Html.RadioButton("searchBy", "Genre") <text> Genre </text> <br />
+        @Html.TextBox("search")<input type="submit" value="Search" />
+    }
+</p>
+
 <h2>Games List</h2>
 
 <p>
