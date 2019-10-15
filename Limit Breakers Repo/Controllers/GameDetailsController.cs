@@ -15,9 +15,16 @@ namespace Limit_Breakers_Repo.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: GameDetails
-        public ActionResult Index()
+        public ActionResult Index(string searchBy, string search)
         {
-            return View(db.GameDetails.ToList());
+            if (searchBy == "Genre")
+            {
+                return View(db.GameDetails.Where(x => x.Genre == search || search == null).ToList());
+            }
+            else
+            {
+                return View(db.GameDetails.Where(x => x.Name.StartsWith(search) || search == null).ToList());
+            }
         }
 
         // GET: GameDetails/Details/5
