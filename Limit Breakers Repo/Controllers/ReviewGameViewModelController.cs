@@ -13,6 +13,8 @@ namespace Limit_Breakers_Repo.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
         public ActionResult Index()
         {
+
+
             int c = 0;
             List<ReviewGameViewModel> vm = new List<ReviewGameViewModel>();
             var list = (from x in db.GameDetails
