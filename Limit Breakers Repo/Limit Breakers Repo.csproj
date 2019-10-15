@@ -227,6 +227,14 @@
     <Compile Include="Migrations\201910152058032_InitialModel8.Designer.cs">
       <DependentUpon>201910152058032_InitialModel8.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910152148091_InitialModel9.cs" />
+    <Compile Include="Migrations\201910152148091_InitialModel9.Designer.cs">
+      <DependentUpon>201910152148091_InitialModel9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910152303000_InitialModel10.cs" />
+    <Compile Include="Migrations\201910152303000_InitialModel10.Designer.cs">
+      <DependentUpon>201910152303000_InitialModel10.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\GameDetails.cs" />
@@ -350,6 +358,7 @@
     <Content Include="Views\GameDetails\AdminView.cshtml" />
     <Content Include="Views\News\DisplayIndex.cshtml" />
     <Content Include="Views\Home\ContactPage.cshtml" />
+    <Content Include="Views\Home\SnakeGame.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\Images\" />
@@ -392,6 +401,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910152058032_InitialModel8.resx">
       <DependentUpon>201910152058032_InitialModel8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910152148091_InitialModel9.resx">
+      <DependentUpon>201910152148091_InitialModel9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910152303000_InitialModel10.resx">
+      <DependentUpon>201910152303000_InitialModel10.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
