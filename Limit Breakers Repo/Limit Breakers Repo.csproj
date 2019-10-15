@@ -219,9 +219,13 @@
     <Compile Include="Migrations\201910142254094_InitialModel6.Designer.cs">
       <DependentUpon>201910142254094_InitialModel6.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910151830554_InitialModel7.cs" />
-    <Compile Include="Migrations\201910151830554_InitialModel7.Designer.cs">
-      <DependentUpon>201910151830554_InitialModel7.cs</DependentUpon>
+    <Compile Include="Migrations\201910151859019_InitialModel7.cs" />
+    <Compile Include="Migrations\201910151859019_InitialModel7.Designer.cs">
+      <DependentUpon>201910151859019_InitialModel7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910152058032_InitialModel8.cs" />
+    <Compile Include="Migrations\201910152058032_InitialModel8.Designer.cs">
+      <DependentUpon>201910152058032_InitialModel8.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -263,10 +267,14 @@
     <None Include="Properties\PublishProfiles\LimitBreakers - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - FTP %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - FTP %284%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LimitBreakers - FTP %285%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LimitBreakers - FTP %286%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %284%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %285%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %286%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -280,7 +288,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -338,6 +348,7 @@
     <Content Include="Views\ReviewGameViewModel\Index.cshtml" />
     <Content Include="Views\GameDetails\AdminView.cshtml" />
     <Content Include="Views\News\DisplayIndex.cshtml" />
+    <Content Include="Views\Home\ContactPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\Images\" />
@@ -375,8 +386,11 @@
     <EmbeddedResource Include="Migrations\201910142254094_InitialModel6.resx">
       <DependentUpon>201910142254094_InitialModel6.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910151830554_InitialModel7.resx">
-      <DependentUpon>201910151830554_InitialModel7.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910151859019_InitialModel7.resx">
+      <DependentUpon>201910151859019_InitialModel7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910152058032_InitialModel8.resx">
+      <DependentUpon>201910152058032_InitialModel8.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

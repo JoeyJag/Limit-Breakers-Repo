@@ -9,6 +9,7 @@
     body {
         background-image: url('../../Content/background/cascadebackground.jpg');
         background-attachment: fixed;
+        color:black;
     }
 
     table {
@@ -29,6 +30,15 @@
 
 
 <h2>Newsboard</h2> <br />
+
+<p>
+    @using (Html.BeginForm("DisplayIndex", "News", FormMethod.Get))
+    {
+        <b> Search By:</b> @Html.RadioButton("searchBy", "Name", true)<text>Name </text>
+        <br />
+        @Html.TextBox("search")<input type="submit" value="Search" />
+    }
+</p>
 
 
 <table class="table">

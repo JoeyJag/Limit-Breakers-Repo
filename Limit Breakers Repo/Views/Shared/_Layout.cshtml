@@ -7,6 +7,12 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+    <style>
+        body{
+            color:black;
+        }
+    </style>
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -28,6 +34,7 @@
                     <li>@Html.ActionLink("Games", "GamesPage", "GameDetails")</li>
                     <li>@Html.ActionLink("Reviews", "Index", "ReviewGameViewModel")</li>
                     <li>@Html.ActionLink("Newsboard", "DisplayIndex", "News")</li>
+                    <li>@Html.ActionLink("Contact Us", "ContactPage", "Home")</li>
                     
                                       
 
