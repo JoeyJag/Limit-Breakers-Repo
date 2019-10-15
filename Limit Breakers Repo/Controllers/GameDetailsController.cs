@@ -59,7 +59,7 @@ namespace Limit_Breakers_Repo.Controllers
             {
                 if (UploadGame != null)
                 {
-                    UploadImage.SaveAs(Server.MapPath("/") + "/Content/" + UploadGame.FileName);
+                    UploadGame.SaveAs(Server.MapPath("/") + "/Content/" + UploadGame.FileName);
                     gameDetails.GameLocation = UploadGame.FileName;
                 }
                 else
