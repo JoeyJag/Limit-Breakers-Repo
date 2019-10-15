@@ -12,6 +12,9 @@
         background-size:cover;
         color:black;
     } 
+    h2{
+        text-decoration:underline;
+    }
 
     img{
         max-height: 500px;
@@ -19,7 +22,7 @@
     }
 </style>
 
-<h2 align="center">Games</h2> 
+<h1 align="center">Games</h1> 
 <h3>Feel free to download whichever game is appealing to you.</h3>
 
 <p>
@@ -55,11 +58,18 @@
 
                     <tr>
                         <th>
-                            <button><a href="~/Content/@item.GameLocation">Download</a></button>
+                            <button onclick="myDownload()"><a href="~/Content/@item.GameLocation">Download</a></button>
                         </th>
                     </tr>
                 </table>
         </p>
+
+        <script>
+            function myDownload() {
+                        alert("Thank you for the support. While you wait for the download to complete, why don't you try out our Time Waster game");
+                                        }
+        </script>
+
     }
 </div>
 

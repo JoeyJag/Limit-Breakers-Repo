@@ -227,9 +227,13 @@
     <Compile Include="Migrations\201910152058032_InitialModel8.Designer.cs">
       <DependentUpon>201910152058032_InitialModel8.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910152126591_InitialModel9.cs" />
-    <Compile Include="Migrations\201910152126591_InitialModel9.Designer.cs">
-      <DependentUpon>201910152126591_InitialModel9.cs</DependentUpon>
+    <Compile Include="Migrations\201910152148091_InitialModel9.cs" />
+    <Compile Include="Migrations\201910152148091_InitialModel9.Designer.cs">
+      <DependentUpon>201910152148091_InitialModel9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910152303000_InitialModel10.cs" />
+    <Compile Include="Migrations\201910152303000_InitialModel10.Designer.cs">
+      <DependentUpon>201910152303000_InitialModel10.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -247,14 +251,15 @@
     <Content Include="App_Data\aspnet-Limit Breakers Repo-20191003101731_log.ldf">
       <DependentUpon>aspnet-Limit Breakers Repo-20191003101731.mdf</DependentUpon>
     </Content>
-    <Content Include="Content\background\backgroundpattern.jpg" />
+    <Content Include="Content\background\backgroundlace.jpg" />
     <Content Include="Content\background\cascadebackground.jpg" />
+    <Content Include="Content\background\contact.jpg" />
+    <Content Include="Content\background\cosmic_explosion_bright_lines_136737_1920x1080.jpg" />
     <Content Include="Content\background\Gaming Background.jpg" />
-    <Content Include="Content\background\lightorbwhite.jpg" />
+    <Content Include="Content\background\home.jpg" />
     <Content Include="Content\background\loginpagebackground.jpg" />
-    <Content Include="Content\background\woodenslats.jpg" />
+    <Content Include="Content\background\review.png" />
     <Content Include="Content\bootstrap-darkly.css" />
-    <Content Include="Content\background\reindeerbackground.jpg" />
     <Content Include="Content\home\coolwallpaper.png" />
     <Content Include="Content\home\gaming saying.jpg" />
     <Content Include="Content\home\lolwallpaper.jpg" />
@@ -273,14 +278,12 @@
     <None Include="Properties\PublishProfiles\LimitBreakers - FTP %284%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - FTP %285%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - FTP %286%29.pubxml" />
-    <None Include="Properties\PublishProfiles\LimitBreakers - FTP %287%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %284%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %285%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %286%29.pubxml" />
-    <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy %287%29.pubxml" />
     <None Include="Properties\PublishProfiles\LimitBreakers - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -355,6 +358,7 @@
     <Content Include="Views\GameDetails\AdminView.cshtml" />
     <Content Include="Views\News\DisplayIndex.cshtml" />
     <Content Include="Views\Home\ContactPage.cshtml" />
+    <Content Include="Views\Home\SnakeGame.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\Images\" />
@@ -398,8 +402,11 @@
     <EmbeddedResource Include="Migrations\201910152058032_InitialModel8.resx">
       <DependentUpon>201910152058032_InitialModel8.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910152126591_InitialModel9.resx">
-      <DependentUpon>201910152126591_InitialModel9.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910152148091_InitialModel9.resx">
+      <DependentUpon>201910152148091_InitialModel9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910152303000_InitialModel10.resx">
+      <DependentUpon>201910152303000_InitialModel10.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
