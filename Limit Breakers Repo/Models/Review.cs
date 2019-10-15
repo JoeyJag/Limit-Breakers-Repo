@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -13,6 +14,7 @@ namespace Limit_Breakers_Repo.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ReviewID { get; set; }
         [Required]
+        [DisplayName("Review of Game")]
         public string ReviewOfGame{ get; set; }
         [Required]
         [Range(1,5)]

@@ -128,5 +128,14 @@ namespace Limit_Breakers_Repo.Controllers
             }
             base.Dispose(disposing);
         }
+
+
+
+        public ActionResult DisplayIndex()
+        {
+            var news = db.News.Include(n => n.GameDetails);
+            return View(news.ToList());
+        }
+
     }
 }

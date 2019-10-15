@@ -26,8 +26,8 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Games", "GamesPage", "GameDetails")</li>
-                    <li>@Html.ActionLink("Newsboard", "Index", "News")</li>
-                    
+                    <li>@Html.ActionLink("Reviews", "Index", "ReviewGameViewModel")</li>
+                    <li>@Html.ActionLink("Newsboard", "DisplayIndex", "News")</li>
                     
                                       
 
@@ -44,9 +44,9 @@
                         @if (User.IsInRole("Developer"))
                         {
                             <ul class="nav navbar-nav navbar-right">
-                                <li>@Html.ActionLink("Write a Review", "Create", "Reviews")</li>
+                                <li>@Html.ActionLink("Write a Review", "Create", "Reviews")</li>                              
+                                <li>@Html.ActionLink("Add News", "Create", "News")</li>
                                 <li>@Html.ActionLink("Upload Game", "Create", "GameDetails")</li>
-                                <li>@Html.ActionLink("News Page", "Create", "News")</li>
                             </ul>
                         }
                     </li>
